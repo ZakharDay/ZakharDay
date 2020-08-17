@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "rounded";
+  src: url("rounded.ttf") format("truetype");
+}
+
+*,
+body,
+html {
+  font-family: "rounded";
+  -webkit-font-smoothing: antialiased;
+  -vendor-background-clip: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+textarea,
+input {
+  outline: none;
+}
+
+p {
+  padding: 14px 0 15px;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+}
+
+section.mainFrame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 696px;
+  max-height: 100%;
+  background-image: url("index_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+section.landingScreen {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+section.landingScreen h1 {
+  margin-top: 158px;
+  margin-left: 158px;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 72px;
+  color: white;
+}
+
+section.landingScreen p {
+  margin-left: 158px;
+}
+
+section.landingScreen .turquoise {
+  color: #00de98;
+}
+
+section.landingScreen section,
+section.landingScreen footer {
+  width: 100%;
+}
+
+section.landingScreen section.welcome > p:first-of-type {
+  margin-top: 30px;
+}
+
+section.landingScreen section.welcome a:hover {
+  text-decoration: none;
+}
+
+section.landingScreen section.contactMe {
+  width: 86%;
+}
+
+section.landingScreen section.contactMe a.contactMe {
+  float: right;
+  width: 210px;
+}
+
+footer {
+  position: relative;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+footer span.social {
+  display: inline-block;
+  height: 36px;
+  margin-top: -2px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+footer a.social {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 2px;
+}
+
+footer a.social:hover {
+  opacity: 0.7;
+}
+
+footer a.social.behance {
+  background-image: url("social/social-behance.png");
+}
+
+footer a.social.facebook {
+  background-image: url("social/social-facebook.png");
+}
+
+footer a.social.linkedin {
+  background-image: url("social/social-linkedin.png");
+}
+
+footer a.social.twitter {
+  background-image: url("social/social-twitter.png");
+}
+
+footer a.social.instagram {
+  background-image: url("social/social-instagram.png");
+}
+
+section.contactScreen {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+section.contactScreen .contactForm {
+  width: 596px;
+  margin: 0 auto;
+}
+
+section.contactScreen .contactForm .stepTwo,
+section.contactScreen .contactForm .stepThree {
+  display: none;
+}
+
+section.contactScreen .contactForm .label {
+  padding-bottom: 8px;
+}
+section.contactScreen .contactForm .fields {
+  font-size: 0;
+}
+
+section.contactScreen .contactForm .label,
+section.contactScreen .contactForm .contactFormSteps {
+  margin-left: 4px;
+}
+
+section.contactScreen .contactForm input[type="text"] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 478px;
+  height: 51px;
+  padding: 10px;
+  border: 4px solid white;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  background: none;
+  border-radius: 5px;
+}
+
+section.contactScreen .contactForm .next {
+  width: 108px;
+  margin-left: 10px;
+}
+
+section.contactScreen .contactForm .contactFormSteps {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 51px;
+  padding: 0 20px;
+  border: 4px solid white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 42px;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #00de98;
+}
